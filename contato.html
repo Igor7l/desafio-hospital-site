@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Hospital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="menu">
+            <img src="logo.png" alt=""height="47" width="47" title="Hospital Trindade">
+            <h1>Hospital Indomed</h1>  
+            <ul>
+                <a href="index.html"><button>Home</button></a><br><br>
+                <br><a href="nos.html"><button>Quem Somos</button></a><br><br>
+                <br><a href="horario.html"><button>Horarios</button></a><br><br>
+                <br><a href="contato.html"><button>Contato</button></a>
+
+            </ul>
+        </div>
+        <div class="topo">
+            <div class="header">
+                <img src="7.jpg" alt="imagem"  height="122" width="912"> 
+                
+                <!--aqui vai sua imagem -->
+            </div>
+            <div class="corpo">
+                <header>
+                <h1>Formulario de Contato</h1>
+                <p>Entre faça seu cadastro e entre em contato com nosco para marcar sua avaliação Médica!</p>
+            </header>
+            <form method="post"  onsubmit="" id="fContato" action="mailto:igordboliveira.@gmail.com">
+    
+                <fieldset id="usuario"><legend>Identificação do Usuário</legend> 
+               <p>Nome: <input type="text" name="tNome" id="cNome" size="35" maxlength="35" placeholder="Nome Completo" /></p>
+                <p>E-mail: <input type="email" name="tMail" id="cMail" size="35" maxlength="35" placeholder="Email"></p>
+                <p>Telefone: <input type="tel" nome="tTel" id="cTel" size="14" placeholder="Telefone" /> </p>
+                <fieldset id="sexo"><legend>Sexo</legend>
+                    <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label>
+                    <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+                </fieldset>
+                <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></p>
+            </fieldset>
+                <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+                <p> Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="40" placeholder="Av. Rua"></p> 
+                <p> Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"></p> 
+                <p><label for="cEst">Estado: </label>
+                <select name="tEst" id="cEst">
+                    <option>MG</option>
+                    <option>RJ</option>
+                    <option>SP</option>
+                    <option>MT</option>
+                    <option>CE</option>
+            
+                </select></p> 
+                <p><label for="cCid">Cidade:</label>
+                    <input type="tCid" name="" id="cCid"  size="20" maxlength="20" placeholder="Cidade"></p> 
+            </fieldset>
+                <fieldset id="menssagem"><legend>Mensagem do Usuário</legend>
+            <p><label for="cUrg"> Grau de Urgência:</label>
+                <input type="range" name="tUrg" id="cUrg" min="0" max="10"></p> 
+             <p><label for="cMsg">Mensagem:</label>
+                <textarea name="tMsg" id="cMsg"></textarea></p> 
+                <button type="submit"  onclick="alert('Enviado')">Enviar</button><br> <br>
+                <button type="reset">Limpar</button><br>
+            </fieldset>   
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25389.79944552974!2d-48.26232177649484!3d-18.92181911074326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44574c062bad3%3A0x656d242f316ee167!2sUniversidade%20Federal%20de%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1677949641384!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--Aqui vai o conteudo -->
+
+            </div>
+
+            <div class="footer">
+                <p>&copy;Hospital INDOMED Uberlandia</p>
+                <!--Aqui vai o rodape-->
+            </div>
+        </div>
+
+
+    </div>
+    </body>
+</html>
